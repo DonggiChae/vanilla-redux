@@ -1,4 +1,4 @@
-import { createStore } from "redux";
+import { configureStore } from "@reduxjs/toolkit";
 
 const add = document.getElementById("add");
 const minus = document.getElementById("minus");
@@ -9,5 +9,5 @@ const countModifier = (count = 0) => {
 };
 
 
-const countStore = createStore(countModifier);
+const countStore = configureStore(countModifier);
 
